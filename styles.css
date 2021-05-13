@@ -55,8 +55,8 @@ span {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   background-image: url(images/image-header-desktop.jpg);
-  height: 400px;
-  width: 540px;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0;
 }
 
@@ -64,7 +64,9 @@ span {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   background-color: hsl(277, 64%, 61%, 0.6);
-  height: 400px;
+  background-size: 100%;
+  background-repeat: repeat;
+  min-height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -84,5 +86,9 @@ span {
 
   .right {
     background-image: url(images/image-header-mobile.jpg);
+  }
+
+  .overlay {
+    height: 400px;
   }
 }
